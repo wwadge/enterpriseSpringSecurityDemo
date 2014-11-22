@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:security="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/security
        http://www.springframework.org/schema/security/spring-security.xsd">
 
 
+       <beans:bean name="bcryptEncoder"
+                   class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
 
        <security:authentication-manager>
-              <security:authentication-provider user-service-ref="userDetailsService" />
+
+              <security:authentication-provider  user-service-ref="userDetailsService" >
+                      <security:password-encoder ref="bcryptEncoder"/>
+              </security:authentication-provider>
        </security:authentication-manager>
 
        <security:user-service id="userDetailsService">
-              <security:user name="wallace" password="wadge" authorities="ROLE_USER, ROLE_ADMIN" />
-              <security:user name="bob" password="bob" authorities="ROLE_USER" />
+              <security:user name="wallace" password="$2a$10$ZWiTX3r6TtLSMN1cNgwsHuoN5j5.A46fTnvXryVacX9Cmu6KyyUse" authorities="ROLE_USER, ROLE_ADMIN" />
        </security:user-service>
 </beans>

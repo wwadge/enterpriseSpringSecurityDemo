@@ -12,6 +12,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,8 +27,13 @@ public class Application {
     @Autowired
     AuthenticationManager am;
 
+    @Autowired
+    PasswordEncoder passwordEncoder;
+
     public void run() throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println(passwordEncoder.encode("wadge"));
 
         while(true) {
             System.out.println("Please enter your username:");
