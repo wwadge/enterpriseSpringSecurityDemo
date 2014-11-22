@@ -1,7 +1,7 @@
 package demo;
 
 import com.google.common.collect.ImmutableList;
-import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -14,7 +14,9 @@ import java.util.List;
 /**
  * Created by wwadge on 22/11/14.
  */
-public class SampleAuthenticationManager implements AuthenticationManager {
+public class SampleAuthenticationManager implements AuthenticationProvider {
+    // the default implementation of Spring is in ProviderManager class, that simply goes through each
+    // registered authentication provider until it gets a response.
 
     static final List<GrantedAuthority> AUTHORITIES = ImmutableList.of(new SimpleGrantedAuthority("ROLE_USER"));
 
@@ -25,5 +27,10 @@ public class SampleAuthenticationManager implements AuthenticationManager {
                     auth.getCredentials(), AUTHORITIES);
         }
         throw new BadCredentialsException("Bad Credentials");
+    }
+
+    @Override
+    public boolean supports(Class<?> authentication) {
+        return true;
     }
 }

@@ -1,8 +1,11 @@
 package demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -16,13 +19,14 @@ import java.io.InputStreamReader;
 
 @Configuration
 @ComponentScan
+@ImportResource("security.xml")
 @EnableAutoConfiguration
 public class Application {
-    private static AuthenticationManager am = new SampleAuthenticationManager();
 
-    public static void main(String[] args) throws IOException {
+    @Autowired
+    AuthenticationManager am;
 
-
+    public void run() throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         while(true) {
@@ -32,6 +36,7 @@ public class Application {
             String password = in.readLine();
             try {
                 Authentication request = new UsernamePasswordAuthenticationToken(name, password);
+
                 Authentication result = am.authenticate(request);
                 SecurityContextHolder.getContext().setAuthentication(result);
                 break;
@@ -47,13 +52,17 @@ public class Application {
         String username;
         // most auth providers return UserDetails as a principal
         if (principal instanceof UserDetails) {
-             username = ((UserDetails)principal).getUsername();
+            username = ((UserDetails)principal).getUsername();
         } else {
             username = principal.toString();
         }
 
         System.out.println(username);
 
+    }
+
+    public static void main(String[] args) throws IOException {
+        SpringApplication.run(Application.class, args).getBean("application", Application.class).run();
     }
 
 
