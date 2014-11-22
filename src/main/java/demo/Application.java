@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -20,6 +21,7 @@ import java.io.InputStreamReader;
 
 @Configuration
 @ComponentScan
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 @ImportResource("security.xml")
 @EnableAutoConfiguration
 public class Application {
@@ -29,6 +31,10 @@ public class Application {
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    ServiceLayer serviceLayer;
+
 
     public void run() throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -62,6 +68,9 @@ public class Application {
         } else {
             username = principal.toString();
         }
+
+        serviceLayer.findAccounts();
+        serviceLayer.post();
 
         System.out.println(username);
 
