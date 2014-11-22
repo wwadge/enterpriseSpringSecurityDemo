@@ -12,6 +12,11 @@
                    class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 
 
+       <!-- by default AffirmativeBased is used with RoleVoter and AuthenticatedVoter -->
+       <security:global-method-security pre-post-annotations="enabled"
+                                        access-decision-manager-ref="customAccessDecisionManager"
+               />
+
        <security:authentication-manager>
 
               <security:authentication-provider  user-service-ref="userDetailsService" >
