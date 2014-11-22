@@ -14,4 +14,8 @@
               <security:authentication-provider ref="sampleAuthenticationManager"/>
        </security:authentication-manager>
 
+       <security:user-service id="userDetailsService">
+              <security:user name="wallace" password="wadge" authorities="ROLE_USER, ROLE_ADMIN" />
+              <security:user name="bob" password="bob" authorities="ROLE_USER" />
+       </security:user-service>
 </beans>
