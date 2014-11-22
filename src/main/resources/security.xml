@@ -8,10 +8,9 @@
        http://www.springframework.org/schema/security/spring-security.xsd">
 
 
-       <bean id="sampleAuthenticationManager" class="demo.SampleAuthenticationManager"/>
 
        <security:authentication-manager>
-              <security:authentication-provider ref="sampleAuthenticationManager"/>
+              <security:authentication-provider user-service-ref="userDetailsService" />
        </security:authentication-manager>
 
        <security:user-service id="userDetailsService">
