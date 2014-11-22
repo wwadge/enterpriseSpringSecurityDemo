@@ -1,6 +1,6 @@
 package demo;
 
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceLayer {
 
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @Secured("ROLE_STAFF")
     public void findAccounts(){
         System.out.println("I'm in findAccounts");
     }
 
-    @PreAuthorize("hasAuthority('ROLE_USER')")
+    @Secured("ROLE_STAFF")
     public void post(){
         System.out.println("I'm in post");
     }

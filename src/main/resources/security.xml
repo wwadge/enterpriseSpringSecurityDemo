@@ -12,9 +12,32 @@
                    class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 
 
+
+       <bean id="roleHierarchy"
+             class="org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl">
+              <property name="hierarchy">
+                     <value>
+                            ROLE_ADMIN > ROLE_STAFF
+                            ROLE_STAFF > ROLE_USER
+                            ROLE_USER > ROLE_GUEST
+                     </value>
+              </property>
+       </bean>
+
+       <bean id="accessDecision" class="org.springframework.security.access.vote.AffirmativeBased">
+
+              <constructor-arg>
+                     <list>
+                            <bean id="roleVoter" class="org.springframework.security.access.vote.RoleHierarchyVoter">
+                                   <constructor-arg ref="roleHierarchy" />
+                            </bean>
+                     </list>
+              </constructor-arg>
+       </bean>
+
        <!-- by default AffirmativeBased is used with RoleVoter and AuthenticatedVoter -->
-       <security:global-method-security pre-post-annotations="enabled"
-                                        access-decision-manager-ref="customAccessDecisionManager"
+       <security:global-method-security pre-post-annotations="enabled" secured-annotations="enabled"
+                                        access-decision-manager-ref="accessDecision"
                />
 
        <security:authentication-manager>
@@ -25,6 +48,6 @@
        </security:authentication-manager>
 
        <security:user-service id="userDetailsService">
-              <security:user name="wallace" password="$2a$10$ZWiTX3r6TtLSMN1cNgwsHuoN5j5.A46fTnvXryVacX9Cmu6KyyUse" authorities="ROLE_USER, ROLE_ADMIN" />
+              <security:user name="wallace" password="$2a$10$ZWiTX3r6TtLSMN1cNgwsHuoN5j5.A46fTnvXryVacX9Cmu6KyyUse" authorities="ROLE_ADMIN" />
        </security:user-service>
 </beans>
