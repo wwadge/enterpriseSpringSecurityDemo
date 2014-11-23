@@ -1103,6 +1103,127 @@
     <option name="LOCALE" />
     <option name="OPEN_IN_BROWSER" value="true" />
   </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
@@ -1185,6 +1306,33 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/da0cec0cf5fa28fba22e44700d72259e0225f2e4/classmate-1.0.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: commons-logging:commons-logging:1.1.3">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: javax.servlet:javax.servlet-api:3.0.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.0.1/1952f91d84016a39e31346c9d18bd8c9c4a128a/javax.servlet-api-3.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: javax.servlet:jstl:1.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/2f5877ef15adb721421e80f5aa2b6fe069eec8ed/jstl-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: javax.validation:validation-api:1.1.0.Final">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar!/" />
@@ -1201,6 +1349,24 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect/1.2.7/96a7509eb8cf8bdb5a9b82b93de9b76ecb915d1b/thymeleaf-layout-dialect-1.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect/1.2.7/a5b29ff95a5ac72fb95382dec4ddf414004d4004/thymeleaf-layout-dialect-1.2.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: ognl:ognl:3.0.6">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ognl/ognl/3.0.6/a3665cf8e3426686ee751790f3d1e1ec5705e9dc/ognl-3.0.6.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ognl/ognl/3.0.6/8ef4c8207d5a87c99bd7a080aa04ef954aa00b44/ognl-3.0.6-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:7.0.56">
@@ -1221,6 +1387,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/7.0.56/3edaffc67a586f2cf39a810408595d572753e95d/tomcat-embed-el-7.0.56-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:7.0.56">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/7.0.56/328ee1c405216ce2ce6410dd6778e59791067bf5/tomcat-embed-jasper-7.0.56.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/7.0.56/b65e6a0eb257b698893a3e0fe6ca0663fbc93427/tomcat-embed-jasper-7.0.56-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:7.0.56">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/7.0.56/475d0f02d5056c30e351cc5c033cf9d0374d0b12/tomcat-embed-logging-juli-7.0.56.jar!/" />
@@ -1237,6 +1412,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/7.0.56/58682fa4d0b6c6e06506239c3636d6bf6e96de02/tomcat-embed-websocket-7.0.56-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.eclipse.jdt.core.compiler:ecj:4.4">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.4/fe0a961ce7cca03dd3c9b3775c0133229e8231a6/ecj-4.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.4/cae5bc498a10b9244168e64f2455cd6d72d4f907/ecj-4.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
@@ -1264,6 +1448,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.0.3.Final/268b9393804e278e15600fbd169b22726af8b4a2/hibernate-validator-5.0.3.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.javassist:javassist:3.16.1-GA">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.16.1-GA/315891b371395271977af518d4db5cee1a0bc9bf/javassist-3.16.1-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.16.1-GA/8f95b972246d57bca63f7a715af2aa9f61bf7f34/javassist-3.16.1-GA-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jboss.logging:jboss-logging:3.1.1.GA">
@@ -1381,6 +1574,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/1.1.9.RELEASE/f3725fcd080c280f5fc8807e9ba0af8b17e50eab/spring-boot-starter-test-1.1.9.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.1.9.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/1.1.9.RELEASE/c430143056b29a2568a60e1d5429056098abe0ea/spring-boot-starter-thymeleaf-1.1.9.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/1.1.9.RELEASE/74c5a8c9ca4b5f12d112e2d3f9bc6fcc699dc485/spring-boot-starter-thymeleaf-1.1.9.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.1.9.RELEASE">
@@ -1516,6 +1718,33 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.0.8.RELEASE/9d95163e22e4c642c3bb87dbbccff00fad8ed528/spring-webmvc-4.0.8.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring4/2.1.3.RELEASE/245c44aa3f2735f6f8346bbd5028a20652215dbf/thymeleaf-spring4-2.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring4/2.1.3.RELEASE/c7948d461327831e6783eddd6bace998548a6fd1/thymeleaf-spring4-2.1.3.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.thymeleaf:thymeleaf:2.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/2.1.3.RELEASE/2712ec998d7b4065e041146d01d4202da20009b7/thymeleaf-2.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/2.1.3.RELEASE/1f9a319b06192a6ecaa75a646855c9f486d39e83/thymeleaf-2.1.3.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.unbescape:unbescape:1.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.0/4d6208849cec8ae8c16467c285df1e6272bff2ce/unbescape-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.0/904ea44b940cce5b011867a678b25422f3c57f18/unbescape-1.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.yaml:snakeyaml:1.13">

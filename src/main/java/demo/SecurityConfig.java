@@ -30,12 +30,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             <http-basic />
     </http>
          */
-        http
-                .authorizeRequests()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .and()
-                .httpBasic();
+        http.authorizeRequests()
+                .antMatchers("/css/**").permitAll().anyRequest().fullyAuthenticated()
+                .and().formLogin().loginPage("/login")
+                .failureUrl("/login?error").permitAll();
+//
+//        http
+//                .authorizeRequests()
+//                .anyRequest().authenticated()
+//                .and()
+//                .formLogin()
+//                .and()
+//                .httpBasic();
     }
 }

@@ -27,10 +27,17 @@ repositories {
 }
 
 
+
+
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+
+    compile('javax.servlet.jsp.jstl:jstl')
+    compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 

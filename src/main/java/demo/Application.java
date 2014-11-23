@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 //@ImportResource("security.xml")
-@EnableAutoConfiguration(exclude = { org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class })
+@EnableAutoConfiguration
 //@EnableGlobalMethodSecurity(securedEnabled = true)
 public class Application {
 
